@@ -1,0 +1,102 @@
+.about-card p, .info-card p, .about-info p, .about-section p,
+.timeline-card p, .interest-card p, .skill-card p, .software-card p,
+.computer-skill-card p, .project-content p, .skills-summary p {
+  color: var(--muted); font-size: 14px; line-height: 1.9;
+}
+
+/* About */
+.about-layout { display: grid; grid-template-columns: .8fr 1.5fr; gap: 24px; align-items: stretch; }
+.profile-card { padding: 34px 26px; text-align: center; }
+.profile-avatar, .about-avatar {
+  width: 112px; height: 112px; margin: 0 auto 20px; border-radius: 50%;
+  display: grid; place-items: center; color: var(--green); font-size: 38px; font-weight: 700;
+  background: linear-gradient(145deg, #293c25, #101710); border: 1px solid rgba(182,243,107,.35);
+}
+.profile-card h2, .about-profile h2 { font-size: 23px; color: var(--white); font-weight: 600; }
+.profile-card > p, .about-profile > p { color: var(--muted); font-size: 14px; }
+.profile-divider, .about-line { height: 1px; background: var(--line); margin: 22px 0; }
+.profile-quote, .about-quote { color: var(--green) !important; font-size: 13px !important; }
+.about-content, .about-details { display: grid; gap: 18px; }
+.about-card, .about-section { padding: 30px; }
+.about-information, .about-data, .about-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin-top: 20px; }
+.about-information div, .about-data div { padding: 14px 16px; border-radius: 13px; background: rgba(255,255,255,.035); border: 1px solid var(--line); }
+.about-information span, .about-data span { display: block; color: var(--muted); font-size: 12px; margin-bottom: 3px; }
+.about-information strong, .about-data strong { color: var(--white); font-size: 14px; font-weight: 500; }
+.about-info strong, .about-card strong { color: var(--green); }
+
+/* Education */
+.section-title { display: flex; align-items: center; gap: 15px; margin: 45px 0 22px; }
+.section-title > span { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; color: var(--green); background: rgba(182,243,107,.1); border: 1px solid rgba(182,243,107,.2); }
+.section-title h2 { color: var(--white); font-size: 23px; font-weight: 600; }
+.education-section { margin-bottom: 35px; }
+.education-timeline { position: relative; display: grid; gap: 17px; padding-left: 27px; }
+.education-timeline::before { content: ''; position: absolute; left: 8px; top: 12px; bottom: 12px; width: 1px; background: rgba(182,243,107,.3); }
+.timeline-item { position: relative; }
+.timeline-dot { position: absolute; left: -25px; top: 25px; width: 13px; height: 13px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 5px rgba(182,243,107,.1); }
+.timeline-card { padding: 24px 27px; }
+.timeline-number, .future-label { color: var(--green); font-size: 12px; letter-spacing: 1.5px; font-weight: 600; }
+.timeline-card h3 { margin: 5px 0 2px; }
+.timeline-card h4 { color: #d5dfd4; font-size: 14px; font-weight: 400; margin-bottom: 8px; }
+.current-label { display: inline-block; color: var(--green); font-size: 11px; padding: 4px 11px; border-radius: 99px; background: rgba(182,243,107,.1); margin-top: 12px; }
+.education-tags, .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.education-tags span, .project-tags span, .skill-card span { color: var(--green); background: rgba(182,243,107,.08); border: 1px solid rgba(182,243,107,.18); border-radius: 99px; padding: 5px 11px; font-size: 12px; }
+.education-interest { margin-top: 55px; }
+.interest-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 17px; }
+.interest-card { padding: 25px; }
+.interest-icon { color: var(--green); font-size: 24px; margin-bottom: 12px; }
+.future-education { margin-top: 35px; padding: 35px; border-color: rgba(182,243,107,.25); background: radial-gradient(ellipse at 100% 0%, rgba(182,243,107,.1), transparent 48%), var(--panel); }
+.future-education h2 { font-size: 28px; color: var(--white); margin: 10px 0; }
+.future-line { width: 55px; height: 3px; background: var(--green); margin: 17px 0; }
+.future-subtitle, .future-description, .future-quote { color: var(--muted); }
+.future-education h3, .future-major { color: var(--green); }
+.future-education h4 { color: var(--white); font-weight: 400; }
+.education-ending { text-align: center; margin-top: 55px; }
+.education-ending h2 { font-size: 25px; margin-bottom: 8px; }
+.education-ending p { color: var(--muted); }
+
+/* Skills */
+.skills-section { margin-bottom: 42px; }
+.skills-title { color: var(--green); font-size: 23px; margin-bottom: 22px; padding-left: 15px; border-left: 3px solid var(--green); }
+.skills-grid, .software-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 17px; }
+.skill-card, .software-card, .computer-skill-card { padding: 27px; }
+.skill-card h3, .software-card h3, .computer-skill-card h3 { color: var(--white); }
+.skill-card span { display: inline-block; margin: 12px 6px 0 0; }
+.computer-skill-card { margin-top: 18px; }
+.skills-summary, .projects-note { margin-top: 35px; padding: 30px; border-left: 3px solid var(--green); }
+.skills-summary h2 { color: var(--green); }
+
+/* Projects */
+.projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+.project-card { overflow: hidden; }
+.project-number { color: var(--green); font-size: 12px; letter-spacing: 2px; padding: 23px 25px 0; }
+.project-preview { min-height: 145px; margin: 16px 22px 0; padding: 24px; display: flex; flex-direction: column; justify-content: center; gap: 7px; border-radius: 15px; border: 1px solid rgba(182,243,107,.2); background: radial-gradient(circle at 80% 20%, rgba(182,243,107,.16), transparent 35%), #0b100c; }
+.project-preview span { color: var(--green); font-size: 26px; font-weight: 700; }
+.project-preview small { color: var(--muted); font-size: 12px; }
+.project-content { padding: 22px 25px 27px; }
+.project-content h2 { margin-bottom: 8px; }
+.project-content .project-status { color: var(--green); font-size: 12px; margin-top: 14px; }
+
+/* Footer */
+footer { color: #78837a; text-align: center; padding: 25px 18px; border-top: 1px solid var(--line); background: rgba(10,14,11,.8); font-size: 12px; }
+
+/* Responsive */
+@media (max-width: 850px) {
+  header { position: relative; flex-direction: column; padding: 18px 5%; gap: 12px; }
+  nav { justify-content: center; }
+  .hero { width: 88%; min-height: auto; padding: 70px 0; gap: 35px; }
+  .about-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  header h2, .logo { font-size: 21px; }
+  nav { gap: 3px; }
+  nav a { font-size: 12px; padding: 6px 9px; }
+  .hero { flex-direction: column-reverse; text-align: center; padding: 55px 0; }
+  .hero-text { display: flex; flex-direction: column; align-items: center; }
+  .hero h1 { font-size: 42px; }
+  .welcome { letter-spacing: 2px; }
+  .content-page, .about-page, .education-page, .skills-page, .projects-page { width: 90%; padding: 55px 0 65px; }
+  .about-information, .about-data, .about-grid, .interest-grid, .skills-grid, .software-grid, .projects-grid { grid-template-columns: 1fr; }
+  .about-card, .about-section, .future-education { padding: 24px 20px; }
+  .timeline-card, .skill-card, .software-card, .computer-skill-card { padding: 21px; }
+  .page-heading, .about-heading, .education-heading, .projects-heading { margin-bottom: 32px; }
+}
