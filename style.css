@@ -508,3 +508,79 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* ===== NAVBAR FIX ===== */
+
+.header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e3eaf0;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #344454;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #579bb8;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 10px 13px;
+    color: #718096;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #579bb8;
+    background: #eaf5f8;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
+
+/* ป้องกันเมนูแสดงจุด Bullet */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
