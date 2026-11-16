@@ -6,156 +6,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ทักษะความสามารถ | Noppadon Portfolio</title>
     <link rel="stylesheet" href="style.css?v=3">
+
+    <style>
+        /* HEADER */
+        header.header {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #e3eaf0;
+            position: relative;
+            z-index: 100;
+        }
+
+        header.header .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 18px 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        header.header .logo {
+            font-size: 25px;
+            font-weight: 800;
+            color: #344454;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        header.header .logo span {
+            color: #579bb8;
+        }
+
+        header.header nav.navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        header.header .navbar a {
+            display: inline-block;
+            padding: 10px 13px;
+            color: #718096;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        header.header .navbar a:hover,
+        header.header .navbar a.active {
+            color: #579bb8;
+            background: #eaf5f8;
+        }
+
+        @media (max-width: 768px) {
+            header.header .nav-container {
+                flex-direction: column;
+            }
+
+            header.header nav.navbar {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container nav-container">
+<!-- HEADER -->
+<header class="header">
+    <div class="container nav-container">
 
-            <a href="index.html" class="logo">NT<span>.</span></a>
+        <a href="index.html" class="logo">NT<span>.</span></a>
 
-            <nav class="navbar">
-                <a href="index.html">หน้าแรก</a>
-                <a href="about.html">เกี่ยวกับฉัน</a>
-                <a href="education.html">ประวัติการศึกษา</a>
-                <a href="skills.html" class="active">ทักษะ</a>
-                <a href="projects.html">ผลงาน</a>
-                <a href="contact.html">ติดต่อ</a>
-            </nav>
+        <nav class="navbar">
+            <a href="index.html">หน้าแรก</a>
+            <a href="about.html">เกี่ยวกับฉัน</a>
+            <a href="education.html">ประวัติการศึกษา</a>
+            <a href="skills.html" class="active">ทักษะ</a>
+            <a href="projects.html">ผลงาน</a>
+            <a href="contact.html">ติดต่อ</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="skills-page">
+
+    <section class="page-heading">
+        <span class="section-label">MY ABILITIES</span>
+        <h1>ทักษะความสามารถ</h1>
+        <p>ความรู้และทักษะด้านเทคโนโลยีสารสนเทศที่ได้เรียนรู้และฝึกฝน</p>
+    </section>
+
+    <!-- ภาษาโปรแกรม -->
+    <section class="skills-section">
+
+        <h2 class="skills-title">01. ภาษาโปรแกรม</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>มีพื้นฐานในการสร้างโครงสร้างและเนื้อหาของเว็บไซต์</p>
+                <span>พื้นฐาน</span>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>สามารถตกแต่งเว็บไซต์ กำหนดสี และจัดวางองค์ประกอบได้</p>
+                <span>พื้นฐาน</span>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>มีพื้นฐานการเขียนคำสั่งเพื่อเพิ่มการทำงานให้เว็บไซต์</p>
+                <span>กำลังฝึกฝน</span>
+            </div>
+
+            <div class="skill-card">
+                <h3>PHP</h3>
+                <p>มีพื้นฐานการเขียนเว็บไซต์และเชื่อมต่อฐานข้อมูล</p>
+                <span>กำลังฝึกฝน</span>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>มีพื้นฐานการเขียนโปรแกรมด้วยภาษา Python</p>
+                <span>พื้นฐาน</span>
+            </div>
 
         </div>
-    </header>
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="skills-page">
+    <!-- โปรแกรมที่ใช้งาน -->
+    <section class="skills-section">
 
-        <!-- PAGE HEADING -->
-        <section class="page-heading">
-            <span class="section-label">MY ABILITIES</span>
-            <h1>ทักษะความสามารถ</h1>
+        <h2 class="skills-title">02. โปรแกรมที่ใช้งาน</h2>
+
+        <div class="software-grid">
+
+            <div class="software-card">
+                <h3>Visual Studio Code</h3>
+                <p>ใช้เขียนและแก้ไขโค้ดโปรแกรม</p>
+            </div>
+
+            <div class="software-card">
+                <h3>XAMPP</h3>
+                <p>ใช้จำลองเซิร์ฟเวอร์สำหรับพัฒนาเว็บไซต์</p>
+            </div>
+
+            <div class="software-card">
+                <h3>Visual Studio</h3>
+                <p>ใช้สำหรับเขียนและพัฒนาโปรแกรม</p>
+            </div>
+
+            <div class="software-card">
+                <h3>MySQL</h3>
+                <p>ใช้สร้างและจัดการฐานข้อมูล</p>
+            </div>
+
+            <div class="software-card">
+                <h3>Canva</h3>
+                <p>ใช้สำหรับออกแบบงานกราฟิกและสื่อประกอบ</p>
+            </div>
+
+            <div class="software-card">
+                <h3>Photoshop</h3>
+                <p>ใช้ตกแต่งและแก้ไขรูปภาพ</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ทักษะคอมพิวเตอร์ -->
+    <section class="skills-section">
+
+        <h2 class="skills-title">03. ทักษะด้านคอมพิวเตอร์</h2>
+
+        <div class="computer-skill-card">
+            <h3>การประกอบคอมพิวเตอร์</h3>
             <p>
-                ความรู้และทักษะด้านเทคโนโลยีสารสนเทศ
-                ที่ได้เรียนรู้และฝึกฝน
+                มีความรู้พื้นฐานเกี่ยวกับอุปกรณ์คอมพิวเตอร์
+                และสามารถประกอบคอมพิวเตอร์ตามขั้นตอนที่ได้เรียนรู้
             </p>
-        </section>
+        </div>
 
-        <!-- 01 PROGRAMMING -->
-        <section class="skills-section">
+    </section>
 
-            <h2 class="skills-title">01. ภาษาโปรแกรม</h2>
+    <!-- การพัฒนาตนเอง -->
+    <section class="skills-summary">
 
-            <div class="skills-grid">
+        <h2>การพัฒนาตนเอง</h2>
 
-                <div class="skill-card">
-                    <h3>HTML</h3>
-                    <p>มีพื้นฐานในการสร้างโครงสร้างและเนื้อหาของเว็บไซต์</p>
-                    <span>พื้นฐาน</span>
-                </div>
+        <p>
+            ผมมีความสนใจด้านเทคโนโลยีสารสนเทศ
+            และตั้งใจพัฒนาความรู้ด้านการเขียนโปรแกรม
+            การสร้างเว็บไซต์ และการทำงานเกี่ยวกับคอมพิวเตอร์
+            พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ
+        </p>
 
-                <div class="skill-card">
-                    <h3>CSS</h3>
-                    <p>สามารถตกแต่งเว็บไซต์ กำหนดสี และจัดวางองค์ประกอบได้</p>
-                    <span>พื้นฐาน</span>
-                </div>
+    </section>
 
-                <div class="skill-card">
-                    <h3>JavaScript</h3>
-                    <p>มีพื้นฐานการเขียนคำสั่งเพื่อเพิ่มการทำงานให้เว็บไซต์</p>
-                    <span>กำลังฝึกฝน</span>
-                </div>
+</main>
 
-                <div class="skill-card">
-                    <h3>PHP</h3>
-                    <p>มีพื้นฐานการเขียนเว็บไซต์และเชื่อมต่อฐานข้อมูล</p>
-                    <span>กำลังฝึกฝน</span>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <p>มีพื้นฐานการเขียนโปรแกรมด้วยภาษา Python</p>
-                    <span>พื้นฐาน</span>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 02 SOFTWARE -->
-        <section class="skills-section">
-
-            <h2 class="skills-title">02. โปรแกรมที่ใช้งาน</h2>
-
-            <div class="software-grid">
-
-                <div class="software-card">
-                    <h3>Visual Studio Code</h3>
-                    <p>ใช้เขียนและแก้ไขโค้ดโปรแกรม</p>
-                </div>
-
-                <div class="software-card">
-                    <h3>XAMPP</h3>
-                    <p>ใช้จำลองเซิร์ฟเวอร์สำหรับพัฒนาเว็บไซต์</p>
-                </div>
-
-                <div class="software-card">
-                    <h3>Visual Studio</h3>
-                    <p>ใช้สำหรับเขียนและพัฒนาโปรแกรม</p>
-                </div>
-
-                <div class="software-card">
-                    <h3>MySQL</h3>
-                    <p>ใช้สร้างและจัดการฐานข้อมูล</p>
-                </div>
-
-                <div class="software-card">
-                    <h3>Canva</h3>
-                    <p>ใช้สำหรับออกแบบงานกราฟิกและสื่อประกอบ</p>
-                </div>
-
-                <div class="software-card">
-                    <h3>Photoshop</h3>
-                    <p>ใช้ตกแต่งและแก้ไขรูปภาพ</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- 03 COMPUTER SKILLS -->
-        <section class="skills-section">
-
-            <h2 class="skills-title">03. ทักษะด้านคอมพิวเตอร์</h2>
-
-            <div class="computer-skill-card">
-                <h3>การประกอบคอมพิวเตอร์</h3>
-                <p>
-                    มีความรู้พื้นฐานเกี่ยวกับอุปกรณ์คอมพิวเตอร์
-                    และสามารถประกอบคอมพิวเตอร์ตามขั้นตอนที่ได้เรียนรู้
-                </p>
-            </div>
-
-        </section>
-
-        <!-- SELF DEVELOPMENT -->
-        <section class="skills-summary">
-
-            <h2>การพัฒนาตนเอง</h2>
-
-            <p>
-                ผมมีความสนใจด้านเทคโนโลยีสารสนเทศ
-                และตั้งใจพัฒนาความรู้ด้านการเขียนโปรแกรม
-                การสร้างเว็บไซต์ และการทำงานเกี่ยวกับคอมพิวเตอร์
-                พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ
-            </p>
-
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2026 Noppadon Portfolio | Designed by Noppadon</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Noppadon Portfolio | Designed by Noppadon</p>
+</footer>
 
 </body>
 </html>
