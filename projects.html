@@ -4,118 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ผลงาน | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ผลงาน | Noppadon Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <h2>PORTFOLIO</h2>
-        <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="about.html">เกี่ยวกับฉัน</a></li>
-            <li><a href="education.html">ประวัติการศึกษา</a></li>
-            <li><a href="skills.html">ทักษะ</a></li>
-            <li><a href="projects.html" class="active">ผลงาน</a></li>
-            <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-container">
 
-<main class="projects-page">
+            <a href="index.html" class="logo">NT<span>.</span></a>
 
-    <section class="projects-heading">
-        <p class="section-tag">MY PROJECTS</p>
-        <h1>ผลงานของฉัน</h1>
-        <p>ผลงานและประสบการณ์จากการเรียนรู้และฝึกปฏิบัติด้านเทคโนโลยีสารสนเทศ</p>
-    </section>
+            <nav class="navbar">
+                <a href="index.html">หน้าแรก</a>
+                <a href="about.html">เกี่ยวกับฉัน</a>
+                <a href="education.html">ประวัติการศึกษา</a>
+                <a href="skills.html">ทักษะ</a>
+                <a href="projects.html" class="active">ผลงาน</a>
+                <a href="contact.html">ติดต่อ</a>
+            </nav>
 
-    <section class="projects-grid">
+        </div>
+    </header>
 
-        <article class="project-card">
-            <div class="project-number">PROJECT 01</div>
-            <div class="project-preview">
-                <span>FASHION SHOP</span>
-                <small>ONLINE STORE WEBSITE</small>
-            </div>
-            <div class="project-content">
-                <h2>เว็บไซต์ร้านค้าแฟชั่นออนไลน์</h2>
-                <p>
-                    เว็บไซต์ร้านค้าแฟชั่นที่พัฒนาด้วย HTML, CSS และ JavaScript
-                    มีหน้ารายการสินค้า หน้ารายละเอียดสินค้า ตะกร้าสินค้า
-                    และหน้าข้อมูลการสั่งซื้อ
-                </p>
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
+    <!-- MAIN CONTENT -->
+    <main class="projects-page">
+
+        <!-- PAGE HEADING -->
+        <section class="page-heading">
+            <span class="section-label">MY PROJECTS</span>
+            <h1>ผลงานของฉัน</h1>
+            <p>
+                ผลงานและประสบการณ์จากการเรียนรู้และฝึกปฏิบัติ
+                ด้านเทคโนโลยีสารสนเทศ
+            </p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects-grid">
+
+            <!-- PROJECT 01 -->
+            <article class="project-card">
+
+                <div class="project-number">PROJECT 01</div>
+
+                <div class="project-preview">
+                    <span>FASHION SHOP</span>
+                    <small>ONLINE STORE WEBSITE</small>
                 </div>
-                <p class="project-status">สถานะ: กำลังพัฒนา</p>
-            </div>
-        </article>
 
-        <article class="project-card">
-            <div class="project-number">PROJECT 02</div>
-            <div class="project-preview">
-                <span>ROOM BOOKING</span>
-                <small>BOOKING MANAGEMENT SYSTEM</small>
-            </div>
-            <div class="project-content">
-                <h2>ระบบจองห้องเรียนและห้องประชุม</h2>
-                <p>
-                    ระบบสำหรับจองห้องเรียนหรือห้องประชุม
-                    มีระบบเข้าสู่ระบบ การจัดการข้อมูลห้อง
-                    การจองห้อง และการจัดการรายการจอง
-                </p>
-                <div class="project-tags">
-                    <span>PHP</span>
-                    <span>MySQL</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
+                <div class="project-content">
+                    <h2>เว็บไซต์ร้านค้าแฟชั่นออนไลน์</h2>
+
+                    <p>
+                        เว็บไซต์ร้านค้าแฟชั่นที่พัฒนาด้วย HTML, CSS
+                        และ JavaScript มีหน้ารายการสินค้า
+                        หน้ารายละเอียดสินค้า ตะกร้าสินค้า
+                        และหน้าข้อมูลการสั่งซื้อ
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <p class="project-status">สถานะ: กำลังพัฒนา</p>
                 </div>
-                <p class="project-status">สถานะ: ฝึกพัฒนาและปรับปรุง</p>
-            </div>
-        </article>
 
-        <article class="project-card">
-            <div class="project-number">PROJECT 03</div>
-            <div class="project-preview">
-                <span>DJANGO PROJECT</span>
-                <small>PYTHON WEB DEVELOPMENT</small>
-            </div>
-            <div class="project-content">
-                <h2>โปรเจกต์ฝึกพัฒนาเว็บไซต์ด้วย Django</h2>
-                <p>
-                    ฝึกใช้ภาษา Python และ Django
-                    เพื่อเรียนรู้การสร้างเว็บไซต์ การทำงานของ Views,
-                    URLs, Templates และการจัดการข้อมูลเบื้องต้น
-                </p>
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>Django</span>
-                    <span>HTML</span>
+            </article>
+
+            <!-- PROJECT 02 -->
+            <article class="project-card">
+
+                <div class="project-number">PROJECT 02</div>
+
+                <div class="project-preview">
+                    <span>ROOM BOOKING</span>
+                    <small>BOOKING MANAGEMENT SYSTEM</small>
                 </div>
-                <p class="project-status">สถานะ: กำลังศึกษาและฝึกฝน</p>
-            </div>
-        </article>
 
-    </section>
+                <div class="project-content">
+                    <h2>ระบบจองห้องเรียนและห้องประชุม</h2>
 
-    <section class="projects-note">
-        <h2>แนวทางการพัฒนาผลงาน</h2>
-        <p>
-            ผมตั้งใจพัฒนาความรู้ด้านการเขียนโปรแกรมและการสร้างเว็บไซต์
-            โดยนำสิ่งที่เรียนมาทดลองสร้างเป็นผลงานจริง
-            เพื่อเพิ่มประสบการณ์และพัฒนาทักษะของตนเองอย่างต่อเนื่อง
-        </p>
-    </section>
+                    <p>
+                        ระบบสำหรับจองห้องเรียนหรือห้องประชุม
+                        มีระบบเข้าสู่ระบบ การจัดการข้อมูลห้อง
+                        การจองห้อง และการจัดการรายการจอง
+                    </p>
 
-</main>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
 
-<footer>
-    <p>© 2026 PORTFOLIO | NOPPADON</p>
-</footer>
+                    <p class="project-status">สถานะ: ฝึกพัฒนาและปรับปรุง</p>
+                </div>
+
+            </article>
+
+            <!-- PROJECT 03 -->
+            <article class="project-card">
+
+                <div class="project-number">PROJECT 03</div>
+
+                <div class="project-preview">
+                    <span>DJANGO PROJECT</span>
+                    <small>PYTHON WEB DEVELOPMENT</small>
+                </div>
+
+                <div class="project-content">
+                    <h2>โปรเจกต์ฝึกพัฒนาเว็บไซต์ด้วย Django</h2>
+
+                    <p>
+                        ฝึกใช้ภาษา Python และ Django
+                        เพื่อเรียนรู้การสร้างเว็บไซต์ การทำงานของ Views,
+                        URLs, Templates และการจัดการข้อมูลเบื้องต้น
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>HTML</span>
+                    </div>
+
+                    <p class="project-status">สถานะ: กำลังศึกษาและฝึกฝน</p>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- PROJECT NOTE -->
+        <section class="projects-note">
+
+            <h2>แนวทางการพัฒนาผลงาน</h2>
+
+            <p>
+                ผมตั้งใจพัฒนาความรู้ด้านการเขียนโปรแกรม
+                และการสร้างเว็บไซต์ โดยนำสิ่งที่เรียนมาทดลองสร้าง
+                เป็นผลงานจริง เพื่อเพิ่มประสบการณ์และพัฒนาทักษะ
+                ของตนเองอย่างต่อเนื่อง
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Noppadon Portfolio | Designed by Noppadon</p>
+    </footer>
 
 </body>
 </html>
